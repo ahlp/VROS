@@ -13,6 +13,8 @@ public class addCameraVR : Photon.MonoBehaviour
             Object newCam = Instantiate(camera, transform.position, transform.rotation);
             var newTransform = ((GameObject)newCam).transform;
             newTransform.parent = transform;
+
+            gameObject.AddComponent<Shotter>();
         }
     }
 	
